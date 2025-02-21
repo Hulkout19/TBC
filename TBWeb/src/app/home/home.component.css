@@ -1,0 +1,27 @@
+body{
+    margin-top: 125px;
+    width: 100%;
+}
+.card{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 200px;
+    width: 1200px;
+    height: 500px;
+    background-color: #A9A9A9;
+    border-radius: 10px;
+}
+.houseIMG{
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+}
+
+.intro{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002D62; 
+}
