@@ -1,7 +1,38 @@
+.HomeButton{
+    width: 200px;
+    margin-top: -100px;
+    color: transparent;
+}
+.logo{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 25px;
+    color: #002D62; 
+}
 
+.subLogo{
+    color: #002D62;
+    font-size: 20px;
+    margin-left: 25px;
+    animation-delay: 1s;
+    animation: accordian 5s;
+    animation-fill-mode: forwards ;
+}
+
+.logo-img{
+    display:flexbox;
+    width: 50px;
+}
+
+@keyframes accordian{
+    0%{ letter-spacing: normal;}
+    100%{ letter-spacing: 10px;}
+    
+}
 
 .toolbar {
-    background-color: #5F9EA0;
+    /* background-color: #5F9EA0; */
+    background-color: #A9A9A9;
     width: 100%;
     height: 125px;
     top: 0;
@@ -20,15 +51,14 @@
   
   
   .link-list{
-    margin-top: 25px;
-      text-align: center;
+    margin-top: -55px;
+    text-align: center;
   }
   
    .link-list a{
-      margin-top: 15px;
 
-      color: #F3EAE3;
-      font-size: medium;
+      color: #002D62;
+      font-size: large;
   
   } 
   
@@ -59,9 +89,7 @@
   .dropdown {
       display: none;
     }
-    #allButton{
-        display: block;
-    }
+    
     .logo-wave{
       display: none;
     }
