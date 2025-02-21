@@ -1,8 +1,11 @@
+
 body{
     margin-top: 125px;
     width: 100%;
+    overflow-y:hidden;
 }
 .card{
+    overflow-y: hidden;
     display: flex;
     align-items: flex-start;
     margin: auto;
@@ -31,10 +34,16 @@ body{
     margin-left: auto;
     margin-right: auto;
     color: #002D62; 
+    /* background-color: bisque; */
+    text-align: left;
 }
 
 .introBody{
+    /* background-color: bisque; */
+    margin-top: 50px;
     font-size: 25px;
     text-align: left;
     color: #002D62;
+    width: 350px;
+    line-height: 25px;
 }
