@@ -3,6 +3,10 @@
     margin-top: -100px;
     color: transparent;
 }
+.fLine{
+    display: flex;
+    align-items: flex-start;
+}
 .logo{
     font-size: 50px;
     margin-top: 50px;
@@ -20,13 +24,14 @@
 }
 
 .logo-img{
-    display:flexbox;
+    margin-left: 5px;
+    margin-top: 35px;
     width: 50px;
 }
 
 @keyframes accordian{
     0%{ letter-spacing: normal;}
-    100%{ letter-spacing: 10px;}
+    100%{ letter-spacing: 9px;}
     
 }
 

@@ -38,6 +38,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import Typewriter from 't-writer.js';
 // @ts-ignore
 import {MatGridListModule} from '@angular/material';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -45,7 +46,8 @@ import {MatGridListModule} from '@angular/material';
   declarations: [
     AppComponent,
     HomeComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserAnimationsModule,
