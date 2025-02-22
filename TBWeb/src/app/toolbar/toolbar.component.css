@@ -3,10 +3,10 @@
     margin-top: -100px;
     color: transparent;
 }
-/* .fLine{
-    display: flex;
-    align-items: flex-start;
-} */
+.fLine{
+    margin-top: 20px;
+    margin-left: 30px;
+} 
 .logo{
     font-size: 50px;
     margin-top: 50px;
@@ -14,35 +14,39 @@
     color: #002D62; 
 }
 
-.subLogo{
-    margin-top: -5px;
-    color: #002D62;
-    font-size: 20px;
-    margin-left: 5px;
-    animation-delay: 1s;
-    animation: accordian 5s;
-    animation-fill-mode: forwards ;
-}
-.fLine a{
+
+.logoButton{
   margin-left: 20px;
-  margin-top: 15px;
-  width: 240px;
-  height: 100px;
+  margin-top: 30px;
   text-decoration: none;
+  text-align: left;
 }
 
 .logoButton:hover{
   background-color: transparent !important;
   box-shadow: none !important;
-}
+  cursor: pointer;
+} 
 
 .logo-img{
-    width: 230px;
+  margin-left: -5px;
+  width: 230px;
+}
+
+.subLogo{
+  margin-top: -5px;
+  color: #002D62;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 20px;
+  animation-delay: 1s;
+  animation: accordian 5s;
+  animation-fill-mode: forwards ;
 }
 
 @keyframes accordian{
     0%{ letter-spacing: normal;}
-    100%{ letter-spacing: 9px;}
+    100%{ letter-spacing: 9.5px;}
     
 }
 
@@ -54,6 +58,7 @@
     top: 0;
     left: 0;
     position: absolute;
+    z-index: 1;
   }
   
   .logo-text img{
@@ -74,7 +79,7 @@
    .link-list a{
 
       color: #002D62;
-      font-size: large;
+      font-size: 25px;
   
   } 
   

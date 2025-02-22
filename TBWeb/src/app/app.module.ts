@@ -39,6 +39,7 @@ import Typewriter from 't-writer.js';
 // @ts-ignore
 import {MatGridListModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -47,7 +48,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HomeComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserAnimationsModule,

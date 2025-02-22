@@ -9,12 +9,24 @@ body{
     display: flex;
     align-items: flex-start;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     width: 1200px;
     height: 500px;
     background-color: #A9A9A9;
     border-radius: 10px;
+    animation-delay: 1s;
+    animation: fade-out 3s;
+    animation-fill-mode: forwards ;
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
 }
+
+@keyframes fade-out{
+    0%{ opacity: 0;}
+    100%{ opacity: 100;}
+    
+}
+
 .houseIMG{
     height: 500px;
     border-top-left-radius: 10px;
