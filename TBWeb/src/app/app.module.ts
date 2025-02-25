@@ -40,6 +40,7 @@ import Typewriter from 't-writer.js';
 import {MatGridListModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -49,7 +50,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ToolbarComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    SliderComponent
   ],
   imports: [
     BrowserAnimationsModule,
