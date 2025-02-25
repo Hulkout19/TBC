@@ -3,6 +3,7 @@ body{
     margin-top: 125px;
     width: 100%;
     overflow-y:hidden;
+    overflow-x: hidden;
 }
 .card{
     overflow-y: hidden;
@@ -60,4 +61,20 @@ body{
     color: #002D62;
     width: 350px;
     line-height: 25px;
+}
+
+.slide-toggler.active .card{
+    transform: translateX(500px);
+    -webkit-tap-highlight-color: transparent;
+    animation-delay: 1s;
+    animation: fade-in 3s;
+    animation-fill-mode: forwards ;
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
+    /* box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595); */
+}
+
+@keyframes fade-in{
+    0%{ opacity: 100;}
+    100%{ opacity: 0;}
+    
 }

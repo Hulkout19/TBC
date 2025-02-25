@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="slide-toggler" [class.active]="isActive">
 <div class="card">
     
     <img class="houseIMG"src="assets/floridaHouse.jpeg">
@@ -14,14 +15,11 @@
         <p class="introBody">Is a family owned contracting company based and serving the greater St. Petersburg area.   we at Aspire are dedicated to providing contracting services that are marked with integrity, honesty, and efficiency. Take a look at some of the projects we've worked on and feel free to reach out for a quote today!</p>
     </div>
     
-
-    <div class="menu-toggler" [class.active]="isActive" (click)="toggleMenu()">
-        <div class="lineDrop">
-           <p class="topP">――</p>
-           <p class="midP">――</p>
-           <p class="botP">――</p>
-       </div>
-   </div>
     
+    
+    
+</div>
+
+    <button class="slideButton"  (click)="toggleSlide()">-></button>
 </div>
 </body>

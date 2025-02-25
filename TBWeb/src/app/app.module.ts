@@ -51,7 +51,6 @@ import { SliderComponent } from './slider/slider.component';
     ToolbarComponent,
     FooterComponent,
     ContactComponent,
-    SliderComponent
   ],
   imports: [
     BrowserAnimationsModule,
