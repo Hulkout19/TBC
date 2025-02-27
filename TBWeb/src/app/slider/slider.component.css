@@ -5,14 +5,22 @@ body{
     overflow-y:hidden;
     overflow-x: hidden;
 }
+
+.pBody{
+    margin-top: 125px;
+    width: 200%;
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
 .card{
     overflow-y: hidden;
-    display: flex;
+    overflow: hidden;
+    display: inline-block;
     align-items: flex-start;
     margin: auto;
     margin-top: 70px;
     margin-bottom: 50px;
-    width: 1200px;
+    width: 500px;
     height: 500px;
     background-color: #A9A9A9;
     border-radius: 10px;
@@ -21,6 +29,7 @@ body{
     animation-fill-mode: forwards ;
     box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
     /* box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595); */
+    transition: all 0.2s ease-in-out;
 }
 
 @keyframes fade-out{
@@ -63,18 +72,19 @@ body{
     line-height: 25px;
 }
 
-/* .slide-toggler.active .card{
+.slide-toggler.active .card{
+
     transform: translateX(500px);
     -webkit-tap-highlight-color: transparent;
-    animation-delay: 1s;
+    /* animation-delay: 1s;
     animation: fade-in 3s;
-    animation-fill-mode: forwards ;
+    animation-fill-mode: forwards ; */
     box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595);
-} */
+}
 
 @keyframes fade-in{
-    0%{ opacity: 100;}
-    100%{ opacity: 0;}
+    0%{ transform: translateX(500px);}
+    100%{ transform: translateX(500px);}
     
 }

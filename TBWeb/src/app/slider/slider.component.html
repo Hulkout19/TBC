@@ -6,17 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div class="pBody">
 <div class="slide-toggler" [class.active]="isActive">
-<div class="card">
+<div class="card" *ngFor="let holder of project; index as i">
     
     <img class="houseIMG"src="assets/floridaHouse.jpeg">
     <div class="textHolder">
-        <p class="intro">{{hold.title}}</p>
-        <p class="introBody">{{hold.description}}</p>
+        <p class="intro">{{holder.title}}</p>
+        <p class="introBody">{{holder.description}}</p>
     </div>
 </div>
-    <button class="slideButton"  (click)="toggleLeft()"><-</button>
-    <button class="slideButton"  (click)="toggleRight()">-></button>
+    
+</div>
+<button class="slideButton"  (click)="moveLeft()"><-</button>
+    <button class="slideButton"  (click)="moveLeft()">-></button>
     <p>{{hold.title}}</p>
 </div>
 </body>
