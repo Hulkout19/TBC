@@ -80,7 +80,8 @@ import { SliderComponent } from './slider/slider.component';
     MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
-  ],
+    SliderComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })

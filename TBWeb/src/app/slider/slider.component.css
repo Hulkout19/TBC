@@ -63,15 +63,15 @@ body{
     line-height: 25px;
 }
 
-.slide-toggler.active .card{
+/* .slide-toggler.active .card{
     transform: translateX(500px);
     -webkit-tap-highlight-color: transparent;
     animation-delay: 1s;
     animation: fade-in 3s;
     animation-fill-mode: forwards ;
     box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
-    /* box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595); */
-}
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595);
+} */
 
 @keyframes fade-in{
     0%{ opacity: 100;}
