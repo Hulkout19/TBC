@@ -41,6 +41,7 @@ import {MatGridListModule} from '@angular/material';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { SliderComponent } from './slider/slider.component';
+import { NewSliderComponent } from './new-slider/new-slider.component';
 
 
 
@@ -51,6 +52,7 @@ import { SliderComponent } from './slider/slider.component';
     ToolbarComponent,
     FooterComponent,
     ContactComponent,
+    NewSliderComponent,
   ],
   imports: [
     BrowserAnimationsModule,
