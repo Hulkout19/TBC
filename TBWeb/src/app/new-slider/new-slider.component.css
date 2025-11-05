@@ -1,7 +1,6 @@
 .card{
     overflow-y: hidden;
     text-align: center;
-    margin: auto;
     margin-top: 70px;
     margin-bottom: 50px;
     width: 750px;
@@ -13,6 +12,7 @@
     animation-fill-mode: forwards ;
     box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
     /* box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595); */
+
 }
 
 @keyframes fade-out{
@@ -25,11 +25,25 @@
     padding: 10px;
     text-align: center;
     width: 600px;
-
     margin: auto;
 }
 
 .holder{
     display: flex;  
     align-items: center;
+
+}
+
+.rightArrow{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+
+
+}
+.leftArrow{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    
 }
