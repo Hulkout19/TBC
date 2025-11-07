@@ -1,7 +1,6 @@
 .card{
     overflow-y: hidden;
     text-align: center;
-    margin-top: 70px;
     margin-bottom: 50px;
     width: 750px;
     height: 650px;
@@ -41,9 +40,30 @@
 
 
 }
+
+.rightArrow:active{
+    transform: translateX(5px);
+}
+
 .leftArrow{
     width: 150px;
     height: 150px;
     cursor: pointer;
     
+}
+
+.leftArrow:active{
+    transform: translateX(-5px);
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002D62; 
 }
