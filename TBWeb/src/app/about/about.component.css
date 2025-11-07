@@ -1,7 +1,52 @@
 .title h2{
     font-size: 40px;
     margin-top: 50px;
-    margin-left: auto;
+    margin-left: 2%;
     margin-right: auto;
     color: #002D62; 
+    width: 40%;
+}
+.title-ul{
+    width: 40%;
+    margin-left: 2%;
+}
+.about-content{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.about-cell{
+    width: 40%;
+
+}
+
+
+.about-cell p{
+    font-size: 25px;
+    font-weight: 100;
+    color: #002D62;
+    line-height: 25px;
+    margin-left: 5%;
+}
+
+
+.photo-cell{
+    width: 60%;
+    text-align: center;
+}
+
+.photo-holder{
+    margin: auto;
+    background-color: violet;
+    width: 75%;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.856), 0 6px 20px 0 rgb(0, 0, 0);
+    /* box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.595); */
+
+
+}
+
+.about-photo{
+    width: 600px;
+    padding: 20px;
 }
