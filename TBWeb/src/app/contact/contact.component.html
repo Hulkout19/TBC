@@ -1,1 +1,25 @@
-<p>contact works!</p>
+<title>Swell Coffee | Events</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+    <div class="contact-container">
+        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value); userPost.resetForm()"  class="contact-left">
+            <div class="contact-left-title">
+                <h2 class="title">Get a quote today!</h2>
+                <hr>
+
+            </div>
+            <!-- <input type="hidden" name="access_key" value="636fd68f-5b13-4f70-8411-9d769c20ebb2"> -->
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required ngModel>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required ngModel>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <textarea name="message" placeholder="Your message" class="contact-inputs" required ngModel></textarea>
+            <button type="submit">Submit </button>
+        </form>
+        
+
+    </div>
+
+
+</body>

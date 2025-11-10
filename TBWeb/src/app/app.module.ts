@@ -43,6 +43,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SliderComponent } from './slider/slider.component';
 import { NewSliderComponent } from './new-slider/new-slider.component';
 import { AboutComponent } from './about/about.component';
+import { LinksComponent } from './links/links.component';
 
 
 
@@ -55,6 +56,7 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     NewSliderComponent,
     AboutComponent,
+    LinksComponent,
   ],
   imports: [
     BrowserAnimationsModule,

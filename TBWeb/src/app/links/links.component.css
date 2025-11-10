@@ -1,0 +1,35 @@
+.links-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.link-row{
+    background-color: #A9A9A9;
+    height: 150px;
+}
+.lic-cell{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.link-cell{
+    text-align: center; 
+    width: 50%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+p{
+    margin: auto;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: left;
+    color: #002D62;
+    width: 350px;
+    line-height: 25px;
+
+}
