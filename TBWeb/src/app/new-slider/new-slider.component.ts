@@ -15,10 +15,17 @@ export class NewSliderComponent {
   title: string = '';
   start: number = 0;
   picPath: string = '';
+  stopSlide: boolean = false;
   
   constructor(private httpClient: HttpClient){
     this.title = this.project[this.start].title;
     this.picPath = this.project[this.start].iconUrl;
+    // while(!this.stopSlide){
+    //   setTimeout(() => {
+    //     this.moveRight();
+    //   }, 5000);
+    
+    // }
   }
 
     moveRight(): void {

@@ -9,11 +9,11 @@ body{
     display: flex;
     align-items: flex-start;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 120px;
     margin-bottom: 50px;
     width: 100%;
     height: 800px;
-    background-color: #a9a9a9;
+    background-color: #e4e4e4;
     animation-delay: 1s;
     animation: fade-out 3s;
     animation-fill-mode: forwards ;
@@ -41,23 +41,26 @@ body{
 
 .intro{
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     color: #002D62; 
     /* background-color: bisque; */
     text-align: left;
+    width: 450px;
 }
 
 .introBody{
     /* background-color: bisque; */
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 100;
     text-align: left;
     color: #002D62;
-    width: 350px;
-    line-height: 25px;
+    width: 450px;
+    line-height: 40px;
+    
+
 }
 
 .slider{
