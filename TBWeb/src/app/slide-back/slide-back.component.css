@@ -1,0 +1,43 @@
+.houseIMG{
+    display: block;
+    width: 100%;
+    height: 800px;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+}
+
+.houseIMG2{
+    display: none;
+    width: 100%;
+    height: 800px;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+    
+}
+
+@keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{ opacity: 100;}
+    
+}
+
+.houseIMG.change{
+    display: none;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+}
+.houseIMG2.change{
+    display: block;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+}
+.houseIMG.change2{
+    display: block;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+}
+.houseIMG2.change2{
+    display: none;
+    animation: fade-in 1s;
+    animation-fill-mode: forwards ;
+}

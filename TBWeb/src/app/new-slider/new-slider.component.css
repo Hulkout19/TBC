@@ -1,16 +1,25 @@
+
+
 .card{
     overflow-y: hidden;
+    overflow-x: hidden;
     text-align: center;
     margin-bottom: 50px;
     width: 750px;
     height: 650px;
     background-color: #e4e4e4;
-    border-radius: 10px;
+
 
     animation-delay: 1s;
     animation: fade-out 3s;
     animation-fill-mode: forwards ;
     
+}
+
+.textHolder{
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 @keyframes fade-out{
@@ -20,11 +29,23 @@
 }
 
 .houseIMG{
-    padding: 10px;
     text-align: center;
-    width: 600px;
-    height: 400px;
+    width: 750px;
+    height: 650px;
     margin: auto;
+    animation: fade-out 5s;
+    animation-fill-mode:forwards ;
+}
+
+.houseIMG.change{
+    animation: changeImage 2s forwards;
+    animation-fill-mode:forwards ;
+}
+
+@keyframes changeImage{
+    0%{ opacity: 0;}
+    100%{ opacity: 100;}
+    
 }
 
 .holder{
@@ -37,8 +58,16 @@
     width: 150px;
     height: 150px;
     cursor: pointer;
+    opacity: 0;;
 
+}
 
+.rightArrow:hover{
+    opacity: 1;
+}
+
+.animationRight{
+    animation: moveRight 0.5s forwards;
 }
 
 .rightArrow:active{
@@ -49,7 +78,12 @@
     width: 150px;
     height: 150px;
     cursor: pointer;
+    opacity: 0;
     
+}
+
+.leftArrow:hover{
+    opacity: 1;
 }
 
 .leftArrow:active{

@@ -1,6 +1,6 @@
-<div class="title">
+<!-- <div class="title">
     <h2>Projects</h2>
-</div>
+</div> -->
 
 <div class="holder">
 <div class="leftButton" (click)="moveLeft()"> <img class="leftArrow" src="assets/Left-Arrow.png"></div>
@@ -8,9 +8,8 @@
 
 <div class="card">
     <div class="textHolder">
-        <img class="houseIMG" src={{picPath}}>
-        <p class="intro">{{title}}</p>
-        <p class="introBody">Description</p>
+        <img class="houseIMG" [class.change]="change" src={{picPath}}>
+
     </div>
 </div>
 

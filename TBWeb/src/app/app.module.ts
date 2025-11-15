@@ -44,6 +44,7 @@ import { SliderComponent } from './slider/slider.component';
 import { NewSliderComponent } from './new-slider/new-slider.component';
 import { AboutComponent } from './about/about.component';
 import { LinksComponent } from './links/links.component';
+import { SlideBackComponent } from './slide-back/slide-back.component';
 
 
 
@@ -57,6 +58,7 @@ import { LinksComponent } from './links/links.component';
     NewSliderComponent,
     AboutComponent,
     LinksComponent,
+    SlideBackComponent,
   ],
   imports: [
     BrowserAnimationsModule,

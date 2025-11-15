@@ -1,4 +1,14 @@
-
+.sliderCard{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+}
+.sliderImage{
+    width: 100%;
+    height: 800px;
+}
 body{
     margin-top: 50px;
     width: 100%;
@@ -13,7 +23,8 @@ body{
     margin-bottom: 50px;
     width: 100%;
     height: 800px;
-    background-color: #e4e4e4;
+    /* background-color: #e4e4e4; */
+    background-color: #d1bea8    ;
     animation-delay: 1s;
     animation: fade-out 3s;
     animation-fill-mode: forwards ;
@@ -51,9 +62,8 @@ body{
 }
 
 .introBody{
-    /* background-color: bisque; */
-    margin-top: 50px;
-    font-size: 40px;
+    margin-top: 85px;
+    font-size: 30px;
     font-weight: 100;
     text-align: left;
     color: #002D62;
@@ -64,6 +74,7 @@ body{
 }
 
 .slider{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,4 +87,8 @@ body{
 .links{
     width: 100%;
     
+}
+
+.sliderTop{
+    margin-top: 75px;
 }

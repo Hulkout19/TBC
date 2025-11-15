@@ -4,20 +4,19 @@ import { Projects } from 'src/projects';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-new-slider',
-  templateUrl: './new-slider.component.html',
-  styleUrls: ['./new-slider.component.css']
+  selector: 'app-slide-back',
+  templateUrl: './slide-back.component.html',
+  styleUrls: ['./slide-back.component.css']
 })
-
-
-export class NewSliderComponent {
+export class SlideBackComponent {
   project: Projects[] = PROJECT;
   title: string = '';
   start: number = 0;
   picPath: string = '';
   stopSlide: boolean = false;
   change: boolean = false;
-  
+  change2: boolean = false;
+
   constructor(private httpClient: HttpClient){
     this.title = this.project[this.start].title;
     this.picPath = this.project[this.start].iconUrl;
@@ -28,10 +27,11 @@ export class NewSliderComponent {
     this.startSlideshow();
   }
 
-    async startSlideshow() {
+  async startSlideshow() {
     while (!this.stopSlide) {
       this.moveRight();
       this.change = false;
+      this.change2 = true;
       await this.delay(5000); // 5-second delay between slides
     }
   }
@@ -42,6 +42,7 @@ export class NewSliderComponent {
 
     moveRight(): void {
       this.change = true;
+      this.change2 = false;
       if(this.start <this.project.length - 1) {
         this.start++;
         this.title = this.project[this.start].title;
