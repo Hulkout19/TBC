@@ -2,11 +2,26 @@ import { Component } from '@angular/core';
 import { PROJECT } from '../projects';
 import { Projects } from 'src/projects';
 import { HttpClient } from '@angular/common/http';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-slide-back',
   templateUrl: './slide-back.component.html',
-  styleUrls: ['./slide-back.component.css']
+  styleUrls: ['./slide-back.component.css'],
+  animations: [
+    trigger('fade', [
+      transition('* => *', [
+      style({ opacity: 0 }),
+      animate('1000ms ease-in-out', style({ opacity: 1 }))
+    ])
+  ]),
+  trigger('fade-out', [
+      transition('* => *', [
+      style({ opacity:1 }),
+      animate('1000ms ease-in-out', style({ opacity: 0 }))
+    ])
+  ])
+  ]
 })
 export class SlideBackComponent {
   project: Projects[] = PROJECT;
