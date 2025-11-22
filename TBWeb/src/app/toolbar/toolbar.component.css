@@ -3,6 +3,9 @@
     margin-top: -100px;
     color: transparent;
 }
+.mobile{
+        display: none;
+      }
 .fLine{
     margin-top: 50px;
     margin-left: 30px;
@@ -158,6 +161,22 @@
       text-align: center;
       }
 
+      .home{
+        margin-right: 2px;
+      }
+
+      .contact{
+        margin-left: 20px;
+      }
+
+      .link-list a{
+
+      color: #002D62;
+      font-size: 35px;
+
+
+  
+  } 
       .subLogo{
         margin-top: -5px;
         color: #002D62;
