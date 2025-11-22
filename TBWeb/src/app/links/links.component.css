@@ -4,7 +4,6 @@
 }
 
 .link-row{
-    background-color: #A9A9A9;
     height: 150px;
 }
 .lic-cell{
@@ -14,6 +13,7 @@
     border: 1px;
     border-color: black;
     border-style: solid;
+    border-left: none;
 }
 .link-cell{
     text-align: center; 
@@ -21,6 +21,7 @@
     border: 1px;
     border-color: black;
     border-style: solid;
+    border-right: none;
 }
 
 p{

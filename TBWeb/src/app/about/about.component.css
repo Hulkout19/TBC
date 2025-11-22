@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    overflow-y:hidden;
+}
+
 .title h2{
     font-size: 40px;
     margin-top: 50px;
@@ -12,17 +17,19 @@
 }
 .about-content{
     width: 100%;
-    margin-bottom: 100px;
+    background-color: #d1bea8;
+    margin-bottom: 50px;
+    height: 800px;
 }
 
 .about-cell{
-    width: 40%;
-
+    width: 50%;
+    height: 600px;
 }
 
 
 .about-cell p{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 100;
     color: #002D62;
     line-height: 25px;
@@ -49,4 +56,60 @@
 .about-photo{
     width: 600px;
     padding: 20px;
+}
+
+.card{
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 800px;
+    /* background-color: #e4e4e4; */
+    background-color: #d1bea8;
+    animation-delay: 1s;
+    animation: fade-out 3s;
+    animation-fill-mode: forwards ;
+    
+}
+
+.textHolder{
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002D62; 
+    /* background-color: bisque; */
+    text-align: left;
+    width: 550px;
+}
+
+.introBody{
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+    color: #002D62;
+    width: 450px;
+    line-height: 40px;
+}
+
+.sliderTop{
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 80px;
+    width: 40%;
+}
+
+.travisImage{
+    width: 800px;
+    
 }

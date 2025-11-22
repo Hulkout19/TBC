@@ -51,14 +51,14 @@
 .holder{
     display: flex;  
     align-items: center;
-
+    height: 750px;
 }
 
 .rightArrow{
     width: 150px;
     height: 150px;
     cursor: pointer;
-    opacity: 0;;
+    opacity: 0.1;
 
 }
 
@@ -78,7 +78,7 @@
     width: 150px;
     height: 150px;
     cursor: pointer;
-    opacity: 0;
+    opacity: 0.1;
     
 }
 

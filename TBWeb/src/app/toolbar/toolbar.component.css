@@ -116,81 +116,59 @@
     .logo-wave{
       display: none;
     }
-  
-    @media only screen and (min-width: 414px) and (max-width: 767px) {
+
+    @media only screen and (min-width: 393px) and (max-width: 852px) {
     
-      .logo-wave a{
-        width: 10px;
+      body{
+        display: none;
       }
-    
-      .logo-wave{
-        display: block;
-        float: left;
-        width: 80px;
-        height: auto;
-        margin-top: 45px;
-        margin-left: 40px;
+
+      .mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
-      .logo-wave img{
-        display: block;
-        float: left;
-        width: 150px;
-        height: auto;
-        
+      
+      .fLine{
+        margin-bottom: 50px;
+        justify-content: center;
       }
-  
-      /* .dropdown {
-        display: block;
+
+      .fLine{
+        margin-top: 25px;
+        margin-left: 0px;
+      }  
+      .logo{
+          font-size: 50px;
+          margin-top: 50px;
+          margin-left: 25px;
+          color: #002D62; 
       }
-      #allButton{
-          display: none;
-      } */
-  
-      .dropbtn {
-          background-color: #3498DB;
-          color: white;
-          padding: 10px;
-          font-size: 16px;
-          border: none;
-          cursor: pointer;
-          display: block;
-        }
-        
-        /* Dropdown button on hover & focus */
-        .dropbtn:hover, .dropbtn:focus {
-          background-color: #2980B9;
-        }
-        
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-          position: relative;
-          display: block;
-          /* transition: transform .7s ease-in-out; */
-        }
-        
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f1f1f1;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #ddd;}
-        
-        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-        .show {display:block;}
+
+
+      .logoButton{
+        margin: auto;
+        margin-top: 30px;
+        text-decoration: none;
+
+      }
+
+      .link-list{
+        margin-top: -30px;
+      text-align: center;
+      }
+
+      .subLogo{
+        margin-top: -5px;
+        color: #002D62;
+        width: 200px;
+        font-size: 20px;
+        margin-left: 85px;
+        animation-delay: 1s;
+        animation: accordian 5s;
+        animation-fill-mode: forwards ;
+      }
+
     }
   @media only screen and (width <= 1000px) {
     
