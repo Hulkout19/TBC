@@ -1,0 +1,92 @@
+.link-list{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.dropbtn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.lineDrop{
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px;
+    border-style: solid; */
+    height: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+
+a{
+    color: #002D62;
+}
+
+img{
+    width: 50px;
+
+}
+
+.im1{
+    margin-top: -10px;
+    margin-bottom: -40px;
+}
+
+.im2{
+    margin-bottom: -40px;
+}
+
+.im3{
+    margin-bottom: -40px;
+}
+
+.dropbtn.active img{
+    transition: transform .3s ease-in-out;
+    transform-origin: 50%;
+    transform: rotateX(-180deg);
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.dropbtn.unrotate img{
+    transition: transform .3s ease-in-out;
+    transform-origin: 50%;
+    transform: rotateX(0deg);
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.link-list.active{
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+}
+
+.link-list.unrotate{
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+}

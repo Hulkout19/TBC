@@ -1,0 +1,55 @@
+.card{
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 800px;
+    /* background-color: #e4e4e4; */
+    background-color: #d1bea8;
+    animation-delay: 1s;
+    animation: fade-out 3s;
+    animation-fill-mode: forwards ;
+    border-bottom: #002D62 solid 2px;
+    
+}
+
+.travisImage{
+    width: 600px;
+    
+}
+
+
+.textHolder{
+    width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002D62; 
+    /* background-color: bisque; */
+    text-align: left;
+    width: 450px;
+}
+
+.introBody{
+    margin-top: 85px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+    color: #002D62;
+    width: 450px;
+    line-height: 40px;
+}
+
+.sliderTop{
+    margin: auto;
+    width: 40%;
+}

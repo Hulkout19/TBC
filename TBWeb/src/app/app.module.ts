@@ -45,6 +45,9 @@ import { NewSliderComponent } from './new-slider/new-slider.component';
 import { AboutComponent } from './about/about.component';
 import { LinksComponent } from './links/links.component';
 import { SlideBackComponent } from './slide-back/slide-back.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { ClickOutsideDirective } from './Directives/click-outside.directive';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -59,6 +62,9 @@ import { SlideBackComponent } from './slide-back/slide-back.component';
     AboutComponent,
     LinksComponent,
     SlideBackComponent,
+    DropdownComponent,
+    ClickOutsideDirective,
+    CardComponent,
   ],
   imports: [
     BrowserAnimationsModule,

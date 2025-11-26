@@ -1,0 +1,24 @@
+<div class="dropdown" clickOutside (clickOutside)="clickedOutside()">
+            <div class="dropbtn" [class.active]="isActive" (click)="toggleMenu()" [class.unrotate]="unRotate">
+                    <div class="lineDrop">                      
+                        <img class="im1" src="assets/down-arrow.png">
+                        <img class="im2" src="assets/down-arrow.png">
+                        <img class="im3" src="assets/down-arrow.png">
+                    </div>
+                </div>
+
+
+        <div class="menu" *ngIf="isMenuOpened">
+
+        <div class="link-list" [class.active]="isActive" [class.unrotate]="unRotate">
+                <a class="home" mat-button (click)="toggleMenu()" routerLink="/">
+                    Home
+                </a>
+
+                <a class="contact" mat-button (click)="toggleMenu()" routerLink="/contact">
+                    Contact
+                </a>
+    
+            </div>
+    </div>
+</div>
