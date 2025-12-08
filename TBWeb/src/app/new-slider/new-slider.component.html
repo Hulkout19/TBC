@@ -1,18 +1,31 @@
-<!-- <div class="title">
-    <h2>Projects</h2>
-</div> -->
-
 <div class="holder">
-<div class="leftButton" (click)="moveLeft()"> <img class="leftArrow" src="assets/Left-Arrow.png"></div>
+    <div class="leftButton" (click)="moveLeft()"> <img class="leftArrow" src="assets/Left-Arrow.png"></div>
 
 
-<div class="card">
-    <div class="textHolder">
-        <img class="houseIMG" [class.change]="change" src={{picPath}}>
+    <div class="card">
+        <div class="textHolder">
+            <img class="houseIMG" [class.change]="change" src={{picPath}}>
 
+        </div>
     </div>
+
+    <div class="rightButton" (click)="moveRight()"> <img class="rightArrow" src="assets/right-arrow.png"></div>
+
 </div>
 
-<div class="rightButton" (click)="moveRight()"> <img class="rightArrow" src="assets/right-arrow.png"></div>
+<div class="mobileHolder">
+    
+
+
+    <div class="cardMobile">
+            <img class="houseIMGMobile" [class.change]="change" src={{picPath}}>
+
+    </div>
+
+    <div class="buttonHolder">
+       <img class="leftArrow" (click)="moveLeft()" src="assets/Left-Arrow.png">
+
+        <img class="rightArrow" (click)="moveRight()" src="assets/right-arrow.png">
+    </div>
 
 </div>

@@ -1,5 +1,7 @@
 
-
+.mobileHolder{
+    display: none;
+}
 .card{
     overflow-y: hidden;
     overflow-x: hidden;
@@ -72,7 +74,10 @@
 
 .rightArrow:active{
     transform: translateX(5px);
+    opacity: 1;
 }
+
+
 
 .leftArrow{
     width: 150px;
@@ -100,4 +105,66 @@
     margin-left: auto;
     margin-right: auto;
     color: #002D62; 
+}
+
+@media only screen and (min-width: 393px) and (max-width: 852px) {
+    .holder{
+        display: none;
+    }
+
+    .mobileHolder{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .houseIMGMobile{
+        width: 393px;
+        height: 293px;
+        border-radius: 10px;
+    }
+
+    .cardMobile{
+        width: 100%;
+
+    }
+
+    .leftArrow{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        opacity: 0.1;
+        margin-right: 50px;
+    }
+
+    .rightArrow{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        opacity: 0.1;
+        margin-left: 50px;
+    }
+
+    .leftButtonMobile{
+        width: 50%;
+        
+    }
+
+    .rightButtonMobile{
+        width: 50%;
+    }
+
+    .buttonHolder{
+        display: block;
+        
+        
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

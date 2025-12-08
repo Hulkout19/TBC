@@ -17,6 +17,7 @@ export class NewSliderComponent {
   picPath: string = '';
   stopSlide: boolean = false;
   change: boolean = false;
+  active: boolean = false;
   
   constructor(private httpClient: HttpClient){
     this.title = this.project[this.start].title;
@@ -25,24 +26,25 @@ export class NewSliderComponent {
   }
 
   ngOnInit(): void {
-    this.startSlideshow();
+    // this.startSlideshow();
   }
 
-    async startSlideshow() {
-    while (!this.stopSlide) {
-      this.moveRight();
-      this.change = false;
-      await this.delay(5000); // 5-second delay between slides
-    }
-  }
-    delay(ms: number) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-    }
+  //   async startSlideshow() {
+  //   while (!this.stopSlide) {
+  //     this.moveRight();
+  //     this.change = false;
+  //     await this.delay(5000); // 5-second delay between slides
+  //   }
+  // }
+  //   delay(ms: number) {
+  //   return new Promise(resolve => setTimeout(resolve, ms));
+  //   }
 
 
     moveRight(): void {
       this.change = true;
-      if(this.start <this.project.length - 1) {
+      this.active = true;
+      if(this.start < this.project.length - 1) {
         this.start++;
         this.title = this.project[this.start].title;
         this.picPath = this.project[this.start].iconUrl;
@@ -52,6 +54,7 @@ export class NewSliderComponent {
         this.title = this.project[this.start].title;
         this.picPath = this.project[this.start].iconUrl;
       }
+      this.active = false;
     }
 
     moveLeft(): void {

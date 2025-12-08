@@ -40,10 +40,13 @@
 }
 
 @media only screen and (min-width: 393px) and (max-width: 852px) {
+    .textHolder{
+        border-top: #002D62 solid 2px;
+    }
 .houseIMG{
     display: block;
     width: 100%;
-    height: 200px;
+    height: 600px;
     /* animation: fade-in 1s;
     animation-fill-mode: forwards ; */
 } 
@@ -51,7 +54,7 @@
 .houseIMG2{
     display: none;
     width: 100%;
-    height: 200px;
+    height: 600px;
     animation: fade-in 1s;
     animation-fill-mode: forwards ;
     

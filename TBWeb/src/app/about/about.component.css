@@ -3,6 +3,10 @@ body{
     overflow-y:hidden;
 }
 
+.aboutMobile{
+    display: none;
+}
+
 .title h2{
     font-size: 40px;
     margin-top: 50px;
@@ -112,4 +116,50 @@ body{
 .travisImage{
     width: 800px;
     
+}
+
+@media only screen and (min-width: 393px) and (max-width: 852px) {
+    
+.about-content{
+    display: none;
+}
+
+.aboutMobile{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: #002D62 solid 2px;
+}
+
+.introMobile{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002D62; 
+    /* background-color: bisque; */
+    text-align: center;
+    width: 250px;
+}
+
+.travisImageMobile{
+    width: 80%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.introBodyMobile{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: 100;
+    color: #002D62;
+    line-height: 40px;
+}
 }

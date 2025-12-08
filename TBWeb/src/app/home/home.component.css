@@ -24,7 +24,6 @@ body{
     text-align: center;
     font-size: 40px;
     margin-top: 25px;
-
     color: #002D62; 
 }
 
@@ -59,11 +58,11 @@ body{
 .sliderTop{
     margin: auto;
     width: 40%;
+    
 }
 
 .travisImage{
     width: 600px;
-    
 }
 
 .about{
@@ -101,4 +100,16 @@ body{
     background: linear-gradient(135deg, #e4e2e2, #bab9c2);
 }
 
+@media only screen and (min-width: 393px) and (max-width: 852px) {
+    .sliderCard{
+        margin-top: auto;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+    
+
+}
 
