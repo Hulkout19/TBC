@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { SliderComponent } from './slider/slider.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path:'',
     component: HomeComponent
@@ -20,10 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    scrollPositionRestoration: 'enabled',
-    useHash: false
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
